@@ -1,4 +1,4 @@
-# Multi-Line Selection
+# Multi-Line Text Selection
 
 ## Introduction
 
