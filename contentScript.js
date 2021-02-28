@@ -4,7 +4,7 @@ let selectedText = '';
  they can be restored after a certain event */
 let selectedNodes = [];
 
-let saveButton = null;
+// let saveButton = null;
 
 /* using Depth First Search(dfs) algo to traverse the DOM tree
  and store all the Text leaf nodes in between start and end */
@@ -125,12 +125,13 @@ function deselectAll() {
   }
 }
 
-function hideSaveOption() {
-  if (saveButton === null) return;
-  const body = document.querySelector('body');
-  body.removeChild(saveButton);
-  saveButton = null;
-}
+// For NoteDown App script
+// function hideSaveOption() {
+//   if (saveButton === null) return;
+//   const body = document.querySelector('body');
+//   body.removeChild(saveButton);
+//   saveButton = null;
+// }
 
 // function showSaveOption(x_axis, y_axis) {
 //   const body = document.querySelector('body');
@@ -141,7 +142,7 @@ function hideSaveOption() {
 //   saveButton.addEventListener('click', () => {
 //     // save to database & copy to clipboard
 //     /*
-//     sending selected text to the service worker
+//     sending selected text to the service worker.
 //     service worker updates the note in the local storage.
 //   */
 //     const title = document.querySelector('title').textContent;
@@ -159,8 +160,8 @@ function hideSaveOption() {
 /* if ctrl key is not pressed then remove all 
 the previous selected nodes */
 document.addEventListener('mousedown', (event) => {
-  if (event.target === saveButton) return;
-  hideSaveOption();
+  // if (event.target === saveButton) return;
+  // hideSaveOption();
   if (!event.ctrlKey) {
     removeHighlight();
   }
@@ -175,9 +176,9 @@ document.addEventListener('mouseup', (event) => {
 
   selectedText += '\n';
 
-  // event object provides tjhe location of the mouseup(x- axis & y-axis)
+  // event object provides the location of the mouseup(x- axis & y-axis)
   // using these coordinates to show save option to user
-  showSaveOption(event.pageX, event.pageY);
+  // showSaveOption(event.pageX, event.pageY);
 });
 
 document.addEventListener('copy', (event) => {
