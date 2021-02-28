@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project aims to provide an extra functionality in google chrome web browser which allows a user to select multiple lines of text at the same time and user can copy the text.
+This project aims to provide an extra functionality in google chrome web browser which allows a user to select multiple lines of text at the same time and then copy the text.
 
 ## Installation
 
