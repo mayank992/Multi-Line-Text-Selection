@@ -1,0 +1,32 @@
+{
+  "name": "Multi-Line Text Selection",
+  "description": "This Extension adds multi-Line text selection and copy feature in the google chrome Browser.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {
+      "16": "Logo/logo_16.png",
+      "32": "Logo/logo_32.png",
+      "48": "Logo/logo_48.png",
+      "128": "Logo/logo_128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css": [
+        "contentStyles.css"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "clipboardWrite"
+  ]
+}

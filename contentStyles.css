@@ -1,0 +1,16 @@
+.__highlight_text__ {
+  background-color: #accef7;
+}
+
+.saveButton {
+  display: inline-block;
+  z-index: 1;
+  font-size: 15px;
+  position: absolute;
+  background-color: #dce2e9;
+  border: 1px, solid black;
+}
+
+.saveButton:hover {
+  background-color: #b9bfc7;
+}
