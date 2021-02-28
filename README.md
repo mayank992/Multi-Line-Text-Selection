@@ -43,7 +43,7 @@ Click anywhere on the webpage to remove the selected text.
 
 Copying Text: Use Ctrl + C to copy the text.
 
-Note: For now Right Click and copy is not working but I am working it and try to add it as soon as possible.
+Note: For now Right Click and copy is not working but I am working on it and try to add it as soon as possible.
 
 ## External resources
 
